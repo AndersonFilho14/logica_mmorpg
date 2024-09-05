@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "secrets.json": true,
+        "node_modules": true,
+        ".env": true
+    }
+}

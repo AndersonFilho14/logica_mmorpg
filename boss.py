@@ -8,9 +8,9 @@ def criar_monstro(level=int):
     novo_monstro = {
         "nome" : f'Monstro {level}º',
         "level" : level,
-        "dano" : 5 * level,
-        "hp" : 100 * level,
-        "hp_max" : 100 * level
+        "dano" : 7 * level,
+        "hp_max" : 100 * level,
+        "hp" : 100 * level 
     }
     return novo_monstro
 

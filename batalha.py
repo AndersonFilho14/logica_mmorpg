@@ -26,25 +26,25 @@ def info_batalha(monstro):
           \n {monstro['nome']}: {monstro['hp']}/ {monstro['hp_max']} ')
     print('-'*10)
 
-def batalhar(n):
+def batalhar(monster):
     """Começou a batalha
     :param _type_ monstro: _description_
     """
-    tal_monstro = escolhe_monstro(n)
-    print('*'*25)
-    while player['hp'] > 0 and tal_monstro['hp'] > 0:
-        atacar_monstro(tal_monstro)
-        info_batalha(tal_monstro)
+
+    while player['hp'] > 0 and monster['hp'] > 0:
+        atacar_monstro(monster)
+        info_batalha(monster)
     print('*'*25)
     if player['hp'] > 0:
-        print(f"VITORIAA. \n Player ganhou de um monstro level {tal_monstro['nome']} ")
-        aumentar_xp(tal_monstro)
+        print(f"VITORIAA. \n Player ganhou de um monstro level {monster['nome']} ")
+        aumentar_xp(monster)
         mostrar_player()
         #mostrar stratus e aumentar a experiencia
-    elif tal_monstro['hp'] > 0 :
-        print(f"Vc perdeu para um monstro level {tal_monstro['level']}")
+    elif monster['hp'] > 0 :
+        print(f"Vc perdeu para um monstro level {monster['level']}")
+        break
     else:
+        print('-'*90)
         print('deu alguma merda')
+        print('-'*90)
     print('-'*50)
-
-print(escolhe_monstro(1))

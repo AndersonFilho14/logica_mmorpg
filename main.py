@@ -4,3 +4,5 @@ def main():
     """Ligou
     """
     main_root()
+
+main()

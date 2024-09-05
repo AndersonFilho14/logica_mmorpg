@@ -3,8 +3,8 @@ player = {
     'level' : 10,
     'exp' : 0,
     'exp_max' : 50,
-    'hp' : 100,
-    'hp_max' : 100,
+    'hp' : 200,
+    'hp_max' : 200,
     'dano' : 25
     }
 
